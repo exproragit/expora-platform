@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expora - A/B Testing Made Simple</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .navbar {
+            background: #fff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+        
+        .nav-brand h1 {
+            color: #2563eb;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        
+        .nav-link {
+            color: #6b7280;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            color: #2563eb;
+        }
+        
+        .nav-button {
+            background: #2563eb;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .nav-button:hover {
+            background: #1d4ed8;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: white;
+            padding: 96px 0;
+            text-align: center;
+        }
+        
+        .hero-title {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+        
+        .hero-accent {
+            color: #fbbf24;
+        }
+        
+        .hero-subtitle {
+            font-size: 20px;
+            margin-bottom: 32px;
+            color: #dbeafe;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #2563eb;
+        }
+        
+        .btn-primary:hover {
+            background: #f3f4f6;
+        }
+        
+        .btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #2563eb;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 36px;
+            }
+            
+            .hero-subtitle {
+                font-size: 18px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1>Expora</h1>
+                </div>
+                <div class="nav-menu">
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="dashboard.html" class="nav-button">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                A/B Testing Made
+                <span class="hero-accent">Simple</span>
+            </h1>
+            <p class="hero-subtitle">
+                Boost your conversions with powerful A/B testing tools. 
+                Create, run, and analyze tests in minutes, not hours.
+            </p>
+            <div class="hero-buttons">
+                <a href="dashboard.html" class="btn btn-primary">Start Testing Free</a>
+                <a href="pricing.html" class="btn btn-secondary">View Pricing</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
